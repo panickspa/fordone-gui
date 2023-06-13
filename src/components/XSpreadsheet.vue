@@ -25,12 +25,7 @@
                 v.s = spreadsheet.getData()
             })
             spreadsheet.on('cells-selected', (data, location)=>{
-                v.$emit('selectedCells', {
-                    sci: location.sci,
-                    sri: location.sri,
-                    eci: location.eci,
-                    eri: location.eri
-                } );
+                v.$emit('selectedCells', location);
                 console.log({
                     sci: location.sci,
                     sri: location.sri,
