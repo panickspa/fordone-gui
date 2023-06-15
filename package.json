@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
+    "build-cordova": "vue-tsc --noEmit && vite build --outDir app/www/dist --emptyOutDir --clearScreen --minify false",
     "preview": "vite preview",
     "lint": "eslint . --fix --ignore-path .gitignore"
   },

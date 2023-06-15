@@ -1,0 +1,9 @@
+{
+    "browserWindow":{
+        "webPreferences": {
+            "nodeIntegration": true,
+            "webSecurity": false,
+            "allowRunningInsecureContent": true
+        }
+    }
+}

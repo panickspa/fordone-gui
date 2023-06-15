@@ -32,7 +32,7 @@
                 }
             });
             const v = this
-            spreadsheet.on('cell-selected', (cell, ri, ci)=>{
+            spreadsheet.on('cell-selected', (_cell, ri, ci)=>{
                 // v.s = spreadsheet.getData()
                 v.$emit('selectedCells', {
                     sci: ci,
@@ -44,7 +44,7 @@
             spreadsheet.on('cell-edited', ()=> {
                 v.s = spreadsheet.getData()
             })
-            spreadsheet.on('cells-selected', (data, location)=>{
+            spreadsheet.on('cells-selected', (_data, location)=>{
                 v.$emit('selectedCells', location);
                 // console.log({
                 //     sci: location.sci,
